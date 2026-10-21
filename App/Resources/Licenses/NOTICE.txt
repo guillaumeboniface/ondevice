@@ -1,0 +1,20 @@
+OnDevice initial inference stack
+
+Moonshine Small Streaming English models and Moonshine runtime: MIT.
+https://github.com/moonshine-ai/moonshine
+The bundled Moonshine license includes notices for other model families; this app uses English streaming.
+
+Qwen3.5-2B: Apache License 2.0. Quantized artifact prepared by bartowski.
+https://huggingface.co/Qwen/Qwen3.5-2B
+https://huggingface.co/bartowski/Qwen_Qwen3.5-2B-GGUF
+
+Phonon 31M English: Apache License 2.0. Phonon runtime: MIT or Apache License 2.0.
+Phonon builds on Kyutai Pocket TTS. Includes voices from Gradium's released English catalog.
+https://github.com/gradium-ai/xn-ptts
+https://huggingface.co/gradium/phonon-31m-en
+https://huggingface.co/gradium/phonon-voices
+
+llama.cpp: MIT, Copyright (c) 2023-2026 The ggml authors.
+https://github.com/ggml-org/llama.cpp
+
+Runtime dependencies include ONNX Runtime and ggml components. Preserve the upstream distributions' notices when redistributing these binaries. Model provenance and pinned hashes are in bundled-models.lock.json and runtime-lock.json at the project root.

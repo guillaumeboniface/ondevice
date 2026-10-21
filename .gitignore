@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+build/
+vendor/
+Frameworks/
+App/Resources/Models/*
+!App/Resources/Models/.gitkeep
+*.xcuserstate
+xcuserdata/
+App/Resources/HostPhonon/

@@ -1,0 +1,61 @@
+name: OnDevice
+options:
+  bundleIdPrefix: com.localvoice
+  deploymentTarget:
+    iOS: '18.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    TARGETED_DEVICE_FAMILY: '1'
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+packages:
+  Moonshine:
+    path: vendor/moonshine
+  Phonon:
+    path: vendor/phonon
+targets:
+  OnDevice:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes: [Resources]
+      - path: App/Resources/Models
+        type: folder
+        buildPhase: resources
+      - path: App/Resources/Licenses
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: Moonshine
+        product: MoonshineVoice
+      - package: Phonon
+        product: ptts
+      - framework: Frameworks/llama.xcframework
+        embed: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: OnDevice
+        UIRequiresFullScreen: true
+        UILaunchScreen: {}
+        NSMicrophoneUsageDescription: Your voice is transcribed on this iPhone. Audio stays on your device.
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.localvoice.OnDevice
+        MARKETING_VERSION: '0.1.0'
+        CURRENT_PROJECT_VERSION: '1'
+        GENERATE_INFOPLIST_FILE: NO
+    preBuildScripts:
+      - name: Verify bundled inference assets
+        script: python3 "$SRCROOT/scripts/verify_assets.py"
+        basedOnDependencyAnalysis: false
+schemes:
+  OnDevice:
+    build:
+      targets:
+        OnDevice: all
+    run:
+      config: Release

@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "stack": "Moonshine Small Streaming / Qwen3.5-2B Q4_K_M / Phonon 31M Core ML",
+  "qwenRevision": "7d26695454df6de5fbcce2e58681e62dae06ce43",
+  "files": [
+    {
+      "path": "llm/model.gguf",
+      "bytes": 1396198496,
+      "sha256": "57a1085840f497d764a7fc5d346922dbde961efb54cc792ea81d694fd846a1d8"
+    },
+    {
+      "path": "moonshine/adapter.ort",
+      "bytes": 2870368,
+      "sha256": "c665f742364febad597cc9ac1e0b341ffbee0e24a1466e2f3bde95e6e4771762"
+    },
+    {
+      "path": "moonshine/cross_kv.ort",
+      "bytes": 5356536,
+      "sha256": "e2d3417144e9514055ebfefe8dcc4c0a55a55adcb8530435844c75c53e352bf6"
+    },
+    {
+      "path": "moonshine/decoder_kv.ort",
+      "bytes": 81878600,
+      "sha256": "1a05465b1dd955858dfcbee039c0020fb5dd982b0f5094c34e61735d518d771b"
+    },
+    {
+      "path": "moonshine/encoder.ort",
+      "bytes": 44148576,
+      "sha256": "2d4d973e91e8aca08c51e7e7efa28a46ab265b63d809d5294d18b86bcd85b993"
+    },
+    {
+      "path": "moonshine/frontend.model.ort",
+      "bytes": 26944,
+      "sha256": "09b1210ae30dc5f0f3e45f0ebab914c254741323114f53fbbe5ae62cca35058f"
+    },
+    {
+      "path": "moonshine/frontend.weights.ort",
+      "bytes": 7769464,
+      "sha256": "7ef97521bd4bad3928f5bb6808586f4fcc6e92bd5990394112eed7d4052ec338"
+    },
+    {
+      "path": "moonshine/streaming_config.json",
+      "bytes": 512,
+      "sha256": "26f02b6afb22d60871a5efd85c3d38e569cc0ddb6c5eb6e93d3260152ae8a47a"
+    },
+    {
+      "path": "moonshine/tokenizer.bin",
+      "bytes": 249974,
+      "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d"
+    },
+    {
+      "path": "phonon/bundle.json",
+      "bytes": 9272,
+      "sha256": "ff3156ce14578cee796d6ab99fb03a833f4d03aded05fdd962087129f3c7b87f"
+    },
+    {
+      "path": "phonon/flow-c414-t1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 240018,
+      "sha256": "893c7245265bddc8a5c0ccdf6c975ead9da08045d5a1a9db24e6201f03b19e5f"
+    },
+    {
+      "path": "phonon/flow-c414-t1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 55118784,
+      "sha256": "41ea56cf0daaeeb89280d8162a5a206d39f7048f7039c5f6570d4be79edeb032"
+    },
+    {
+      "path": "phonon/flow-c414-t1.mlpackage/Manifest.json",
+      "bytes": 534,
+      "sha256": "98f982cd816df5ca7a0ce2843a942f95a5bdecae7f987e46b864e8d10620b5a9"
+    },
+    {
+      "path": "phonon/flow-c414-t48.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 240018,
+      "sha256": "6ba426ffee830a5f2b605265aeea218ab0a338f7946a5f730cf3f2cddfe3e039"
+    },
+    {
+      "path": "phonon/flow-c414-t48.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 55118784,
+      "sha256": "41ea56cf0daaeeb89280d8162a5a206d39f7048f7039c5f6570d4be79edeb032"
+    },
+    {
+      "path": "phonon/flow-c414-t48.mlpackage/Manifest.json",
+      "bytes": 534,
+      "sha256": "095faf0e079dfb534c4bb2c5b886d65da8f93a17bf10f6d9b51cfbc9e69b7498"
+    },
+    {
+      "path": "phonon/host.safetensors",
+      "bytes": 8262120,
+      "sha256": "0f12ba46901604a50b79bf8c644f5481a327392d5eb8a254377572dc19b65d65"
+    },
+    {
+      "path": "phonon/mimi-c266.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 131109,
+      "sha256": "9d7a6a44803e6ca46e1e6d29130f3933b810f31afcef3f1fa58001f88df39b68"
+    },
+    {
+      "path": "phonon/mimi-c266.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 41182464,
+      "sha256": "60ec322afab27b8404b02ec0a10a988734b4e1495fbdb3b3d687d9dc9f83ffc3"
+    },
+    {
+      "path": "phonon/mimi-c266.mlpackage/Manifest.json",
+      "bytes": 534,
+      "sha256": "7a96078faae18a3ff5897373d79f55efb9ecb9fb9a3071ff246171f957f18bcc"
+    },
+    {
+      "path": "phonon/source.json",
+      "bytes": 202,
+      "sha256": "5fc9f76b68dbc15954ae39333efc1748003e996fcb913dc421e7da80fd48b329"
+    },
+    {
+      "path": "phonon/tokenizer.json",
+      "bytes": 277967,
+      "sha256": "691a00068fa7b989f2f3e5ae5daa2d1a5bb319f2d5360deafcfb19a8bb6e7936"
+    },
+    {
+      "path": "phonon/voices/Alfie.safetensors",
+      "bytes": 256080,
+      "sha256": "afb0998882edce5ec497bb3811a69b8741223679223d67f1a7108609e17ee98f"
+    },
+    {
+      "path": "phonon/voices/Azgorath.safetensors",
+      "bytes": 256080,
+      "sha256": "1c1aa9f83031abeee0d3de1c2521b5d016b5b0d8399a0db47a53ae47827e2ee0"
+    },
+    {
+      "path": "phonon/voices/Bryony.safetensors",
+      "bytes": 256080,
+      "sha256": "76bd6e832276480fcdd75a258c43b3219ad491728f64f22bce5e7a7a446298a4"
+    },
+    {
+      "path": "phonon/voices/Captain Silas Blackwater.safetensors",
+      "bytes": 256080,
+      "sha256": "6738fcd4a55ab742399aec336c143220ba3707bea525dec6111fdc68ffa5dc00"
+    },
+    {
+      "path": "phonon/voices/Delia.safetensors",
+      "bytes": 256080,
+      "sha256": "e33d74cb00eddf1146afc954280feed1a4678b1d47ee90f932c4c8ce53daf346"
+    },
+    {
+      "path": "phonon/voices/Easton.safetensors",
+      "bytes": 256080,
+      "sha256": "0c4f202676fa9d3a145c7f67fe671f119b6843c90987ef501c31d5d7fdae043f"
+    },
+    {
+      "path": "phonon/voices/Edwin.safetensors",
+      "bytes": 256080,
+      "sha256": "096fe506c612b682f5a370ac38e56d2dcd9e4ae7a698d933a45a723d1d10a9e4"
+    },
+    {
+      "path": "phonon/voices/Elodie-Rose.safetensors",
+      "bytes": 256080,
+      "sha256": "75cc46a6abf7b3dc6bb1895bdfb1914a5e26603b5507672a6910df3e05ff73e4"
+    },
+    {
+      "path": "phonon/voices/Everly.safetensors",
+      "bytes": 256080,
+      "sha256": "5e40608feab857153b76bba00973ab303065aae1d005dcf6b8ffafa9ba9f484c"
+    },
+    {
+      "path": "phonon/voices/Fairy Godmother.safetensors",
+      "bytes": 256080,
+      "sha256": "9818c9e58f07e2199ed2984ca9a11252406272e6f4685c2df9dc52bf0495174d"
+    },
+    {
+      "path": "phonon/voices/Fennick the Young Elf.safetensors",
+      "bytes": 256080,
+      "sha256": "0fa2174b8ba6f4dfc470e617aacbf665551a7f622ac308cecf96447ba77d6d64"
+    },
+    {
+      "path": "phonon/voices/Freya.safetensors",
+      "bytes": 256080,
+      "sha256": "ee09c8b9489ad7531c0f4edb9f6e829200c1ccb2aeac630683f348bdb81fe00a"
+    },
+    {
+      "path": "phonon/voices/Grub the Ogre.safetensors",
+      "bytes": 256080,
+      "sha256": "312da125e167ea5ef68d73e6711068960940dd838e1ad15307a2b8f288548ca7"
+    },
+    {
+      "path": "phonon/voices/Hadley.safetensors",
+      "bytes": 256080,
+      "sha256": "aea4ad06ea632200e92c7742143ae63f2bf8dbf2bb63dbb71f3236793b049d9d"
+    },
+    {
+      "path": "phonon/voices/Harper.safetensors",
+      "bytes": 256080,
+      "sha256": "007d6468bcc85bad68590a567d2bc6ab37b14730ba302eba2b0b6152c263ad77"
+    },
+    {
+      "path": "phonon/voices/Hugh.safetensors",
+      "bytes": 256080,
+      "sha256": "ad1a4c6cdc5a1bed165b6aa6e28ce9d1deb1a9e1ab3d4d6b1aa3442292464d2b"
+    },
+    {
+      "path": "phonon/voices/Imogen.safetensors",
+      "bytes": 256080,
+      "sha256": "4f224d84797a24ad0f77a824f5204d68757826b6e55dd902ba48a5b9b2db9368"
+    },
+    {
+      "path": "phonon/voices/Juniper.safetensors",
+      "bytes": 256080,
+      "sha256": "0cde0e23b22e64f39a8f6fb00444c0cb979a6a268078d0a4830c15dfd11bb491"
+    },
+    {
+      "path": "phonon/voices/Lottie.safetensors",
+      "bytes": 256080,
+      "sha256": "9ba860f38b4cfe55884fc616666ff3272d35689ab36f92e759cd5d2ab27c2556"
+    },
+    {
+      "path": "phonon/voices/Maeve.safetensors",
+      "bytes": 256080,
+      "sha256": "5cf22b2ee74b2033180bb3fc14af79c58bbc02f0f0fa0db10f70172915c21599"
+    },
+    {
+      "path": "phonon/voices/Master Aldric.safetensors",
+      "bytes": 256080,
+      "sha256": "c5f5cbca031859f1ae560455e512c9c44cba89968e1933e85efac3bc93efca56"
+    },
+    {
+      "path": "phonon/voices/Micah.safetensors",
+      "bytes": 256080,
+      "sha256": "9347ca6dfb8c1ee86e3fad57f3d92b64fe2d62f2c3ab30318e8b3c73dd730274"
+    },
+    {
+      "path": "phonon/voices/Miles.safetensors",
+      "bytes": 256080,
+      "sha256": "ec7785c2747f7360797cfdfcf440aa06685dc9de7f7c781491ef46647d6be17f"
+    },
+    {
+      "path": "phonon/voices/Morwenna of the Deep.safetensors",
+      "bytes": 256080,
+      "sha256": "d610fc2dc286b73d34eff32cab1759e0019d8c99a9b6823156343fb1a0ecc99e"
+    },
+    {
+      "path": "phonon/voices/Old Mortlake.safetensors",
+      "bytes": 256080,
+      "sha256": "46465cceddfc814bdf8960954ad599b71de7d77bbafa5ddf81d1d51e3db637a0"
+    },
+    {
+      "path": "phonon/voices/Pippa.safetensors",
+      "bytes": 256080,
+      "sha256": "f6ef4d6fd0fbe303dcad7c668aa64d4d10a729d05ffe8bfdd95cd3b87fc22e67"
+    },
+    {
+      "path": "phonon/voices/Preston.safetensors",
+      "bytes": 256080,
+      "sha256": "a29262436888526ed283292cdc86cd74c53bae7b522df495aeec25907cc9a014"
+    },
+    {
+      "path": "phonon/voices/Russell.safetensors",
+      "bytes": 256080,
+      "sha256": "9477c11856e3be342aef7a95e1ff18c3b20722d51372104e8c61df6fe903e7ca"
+    },
+    {
+      "path": "phonon/voices/Sir Bramwell.safetensors",
+      "bytes": 256080,
+      "sha256": "ed0dca2576306b0791df4519de11a130bfef3b6bc497aad77b834cc9e746175e"
+    },
+    {
+      "path": "phonon/voices/Spencer.safetensors",
+      "bytes": 256080,
+      "sha256": "55167fbbc846c01d0f289feff77e9732be558b94e215a5a1c00fcdc6e7b75b71"
+    },
+    {
+      "path": "phonon/voices/Teddy.safetensors",
+      "bytes": 256080,
+      "sha256": "3ea4baa7c1de20f7bc51254c193bb6cedf1ca3342d20bd504ec381a38c38a5d0"
+    },
+    {
+      "path": "phonon/voices/The Snow Queen.safetensors",
+      "bytes": 256080,
+      "sha256": "95267aa0c9e7c932a7fb9129f98393e1872c8f569e23e36c6360c51323066607"
+    },
+    {
+      "path": "phonon/voices/The Thing Under the Stairs.safetensors",
+      "bytes": 256080,
+      "sha256": "0075203662e0f8fe827412ec6f4b79dfe02917275b97fd1fd39560b0dba4d0e9"
+    },
+    {
+      "path": "phonon/voices/Toby.safetensors",
+      "bytes": 256080,
+      "sha256": "e5bf5a2f2b590f5de19894e65d908263799765a9c63aeaf34cf2c25e86938faf"
+    },
+    {
+      "path": "phonon/voices/Trevor.safetensors",
+      "bytes": 256080,
+      "sha256": "910dc105abef1a46d09ff9124d657e19bac58c1a949065aaa54d09112b6c3420"
+    },
+    {
+      "path": "phonon/voices/Vyrmathrax the Ancient.safetensors",
+      "bytes": 256080,
+      "sha256": "4768e23dcfc3ba5b836bc1eebb1bdea051673d7a5241c74dffc21e7e81f3d9e3"
+    },
+    {
+      "path": "phonon/voices/Zoey.safetensors",
+      "bytes": 256080,
+      "sha256": "6b572207f2de3df786b25053605d4470d183f112477b827da149fadb001cc33d"
+    },
+    {
+      "path": "phonon/voices/default.safetensors",
+      "bytes": 256080,
+      "sha256": "86e524b2bf1e80b350f26cde009cb19dd38b402d202ff77cb4df7ceaec6badeb"
+    }
+  ]
+}
